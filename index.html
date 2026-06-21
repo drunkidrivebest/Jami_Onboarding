@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jami-Ersteinrichtung</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    max-width: 820px;
+    margin: 40px auto;
+    padding: 0 16px;
+    line-height: 1.5;
+    color: #111;
+  }
+
+  .step {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+
+  .locked {
+    opacity: 0.4;
+  }
+
+  .status {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .required {
+    color: #b00020;
+  }
+
+  .ok {
+    color: #1b7f2a;
+  }
+
+  img {
+    max-width: 240px;
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #eee;
+  }
+
+  a.button {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>Jami-Zugang für die Online Nachhilfe</h1>
+
+<p><a href="index_EN.html">English version</a></p>
+  
+<p>Bitte geh die angegebenen Schritte der Reihe nach durch. Du bist bereit sobald <strong>Schritt 2 abgeschlossen ist</strong>.</p>
+
+<!-- STEP 0 -->
+<div class="step">
+  <div class="status">Schritt 0 — Jami installieren</div>
+
+  <p><a class="button" href="https://jami.net/download/">Jami herunterladen</a></p>
+</div>
+  
+<!-- STEP 1 -->
+<div class="step">
+  <div class="status">Schritt 1 — Tutor hinzufügen</div>
+
+  <p>Scanne den QR Code oder kopiere die Jami ID:</p>
+  <img src="QR.png" alt="Jami QR Code">
+
+  <p><strong>Jami ID:</strong> hvogt_nachhilfe</p>
+</div>
+
+<!-- STEP 2 -->
+<div class="step">
+  <div class="status">Schritt 2 — Funktion testen</div>
+
+  <p><strong>Bitte erledige eine der folgenden Aufgaben:</strong></p>
+
+  <ul>
+    <li>Schicke eine Nachricht über Jami und warte auf Antwort oder</li>
+    <li>tätige einen kurzen Testanruf. (empfohlen)</li>
+  </ul>
+  
+  <p class="ok">Nachricht erfolgreich verschickt und Antwort erhalten oder erfolgreich einen Testanruf durchgeführt</p>
+
+  <p class="required">Falls du noch nicht erfolgreich warst, bitte um Unterstützung.</p>
+</div>
+
+<!-- STEP 3 -->
+<div class="step locked">
+  <div class="status">Schritt 3 — Sitzung starten</div>
+
+  <ul>
+    <li>Jami öffnen</li>
+    <li>Anruf zur verabredeten Zeit starten</li>
+  </ul>
+</div>
+
+<!-- Fallback -->
+<div class="step">
+  <div class="status">Falls etwas nicht funktioniert, kann folgendes helfen:</div>
+
+  <ul>
+    <li>Jami neustarten</li>
+    <li>Berechtigungen für Mikrofon und Kamera prüfen</li>
+    <li>anderes Gerät verwenden</li>
+  </ul>
+
+  <p class="required">Falls die Probleme anhalten, können wir zu einem Jitsi Meet Server wechseln.</p>
+</div>
+
+<hr>
+
+<p><a href="Checklist.html">Checkliste für eine erfolgreiche Sitzung</a></p>
+
+</body>
