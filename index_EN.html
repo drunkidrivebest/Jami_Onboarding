@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jami initial setup</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    max-width: 820px;
+    margin: 40px auto;
+    padding: 0 16px;
+    line-height: 1.5;
+    color: #111;
+  }
+
+  .step {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+
+  .locked {
+    opacity: 0.4;
+  }
+
+  .status {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .required {
+    color: #b00020;
+  }
+
+  .ok {
+    color: #1b7f2a;
+  }
+
+  img {
+    max-width: 240px;
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #eee;
+  }
+
+  a.button {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>Jami access for online tutoring</h1>
+
+<p><a href="index.html">Deutsche Version</a></p>
+  
+<p>Please complete the following instructions step by step. You are ready as soon as <strong>Step 2 has been completed</strong>.</p>
+
+<!-- STEP 0 -->
+<div class="step">
+  <div class="status">Step 0 — Install Jami</div>
+
+  <p><a class="button" href="https://jami.net/download/">Download Jami</a></p>
+</div>
+  
+<!-- STEP 1 -->
+<div class="step">
+  <div class="status">Step 1 — Add Tutor</div>
+
+  <p>Scan QR Code or copy Jami ID:</p>
+  <img src="QR.png" alt="Jami QR Code">
+
+    <p><strong>Jami ID:</strong> hvogt_nachhilfe</p>
+  </div>
+
+<!-- STEP 2 -->
+<div class="step">
+  <div class="status">Step 2 — Functionality test</div>
+
+  <p><strong>Please complete one of the following tasks:</strong></p>
+
+  <ul>
+    <li>Send a message via Jami and wait for a reply or</li>
+    <li>start a test call. (recommended)</li>
+  </ul>
+
+  <p class="ok">Message sent uccessfully and answer received or test call done successfully</p>
+
+  <p class="required">If you encounter any difficulties, do not hesitate to ask for help.</p>
+</div>
+
+<!-- STEP 3 -->
+<div class="step locked">
+  <div class="status">Step 3 — Join meeting</div>
+
+  <ul>
+    <li>Open Jami</li>
+    <li>Initiate call at scheduled time</li>
+  </ul>
+</div>
+
+<!-- Fallback -->
+<div class="step">
+  <div class="status">If anything does not work as expected, the following steps might help:</div>
+
+  <ul>
+    <li>Restart Jami</li>
+    <li>Switch to another device</li>
+    <li>Check permissions for microphone and camera</li>
+  </ul>
+
+  <p class="required">If the issue persists, we may switch to a Jitsi Meet Server.</p>
+</div>
+
+<hr>
+
+<p><a href="Checklist_EN.html">Checklist for a sueccessful session</a></p>
+
+</body>
